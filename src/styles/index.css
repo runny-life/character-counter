@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "./typography.css";
+
+@theme {
+  /* Colors */
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-100: #F2F2F7;
+  --color-neutral-200: #E4E4EF;
+  --color-neutral-600: #404254;
+  --color-neutral-700: #2A2B37;
+  --color-neutral-800: #21222C;
+  --color-neutral-900: #12131A;
+  --color-purple-400: #D3A0FA;
+  --color-purple-500: #C27CF8;
+  --color-yellow-500: #FF9F00;
+  --color-orange-500: #FE8159;
+  --color-orange-800: #DA3701;
+  /* Theme */
+  --color-background-dark: var(--color-neutral-900);
+  --color-fonts-dark: var(--color-neutral-200);
+  /* Fonts */
+  --font-dm-sans: "DM Sans", sans-serif;
+  --text-preset-1: clamp(2.5rem, 1.069rem + 6.107vw, 4rem);
+  --text-preset-1--line-height: 1;
+  --text-preset-1--letter-spacing: -1px;
+  --text-preset-2: 1.5rem;
+  --text-preset-2--line-height: 1.3;
+  --text-preset-2--letter-spacing: -1px;
+  --text-preset-3: 1.25rem;
+  --text-preset-3--line-height: 1.4;
+  --text-preset-3--letter-spacing: -0.6px;
+  --text-preset-4: 1rem;
+  --text-preset-4--line-height: 1.3;
+  --text-preset-4--letter-spacing: -0.6px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-dm-sans);
+    color: var(--color-fonts-dark);
+    background: var(--color-background-dark);
+  }
+}
+
+@utility container {
+  max-width: 61.875;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 0.046rem + 4.071vw, 2rem);
+}
