@@ -18,7 +18,7 @@
     <header class="py-4 lg:py-0">
       <div class="container flex justify-between gap-4">
         <a
-          class="inline-block h-7.5 w-46.25 md:h-10 md:w-61.25"
+          class="inline-block h-7.5 w-46.25 transition-opacity duration-300 hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500 focus-visible:outline-dashed md:h-10 md:w-61.25"
           href="#"
           aria-label="Home"
           aria-current="page"
@@ -43,7 +43,7 @@
           </svg>
         </a>
         <button
-          class="flex size-8 cursor-pointer items-center justify-center rounded-md bg-neutral-700 md:size-11"
+          class="transition-[color, transform] flex size-8 cursor-pointer items-center justify-center rounded-md bg-neutral-700 duration-200 hover:bg-purple-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500 focus-visible:duration-0 focus-visible:outline-dashed active:scale-90 md:size-11"
           type="button"
           aria-label="Toggle theme"
         >
@@ -154,6 +154,66 @@
               </article>
             </li>
           </ul>
+          <article class="flex w-full flex-col items-start gap-5">
+            <h3 class="text-preset-2 font-semibold">Letter Density</h3>
+            <ul class="flex w-full flex-col gap-3">
+              <li class="text-preset-4 flex items-center justify-between gap-3.5 font-normal">
+                <span class="w-4 shrink-0 uppercase">E</span>
+                <div class="flex h-3 grow items-center rounded-full bg-neutral-800">
+                  <span class="inline-block h-full w-[16%] rounded-full bg-purple-400"></span>
+                </div>
+                <span class="w-21.75 shrink-0">40 (16.06%)</span>
+              </li>
+              <li class="text-preset-4 flex items-center justify-between gap-3.5 font-normal">
+                <span class="w-4 shrink-0 uppercase">I</span>
+                <div class="flex h-3 grow items-center rounded-full bg-neutral-800">
+                  <span class="inline-block h-full w-[11.65%] rounded-full bg-purple-400"></span>
+                </div>
+                <span class="w-21.75 shrink-0">29 (11.65%)</span>
+              </li>
+              <li class="text-preset-4 flex items-center justify-between gap-3.5 font-normal">
+                <span class="w-4 shrink-0 uppercase">T</span>
+                <div class="flex h-3 grow items-center rounded-full bg-neutral-800">
+                  <span class="inline-block h-full w-[11.24%] rounded-full bg-purple-400"></span>
+                </div>
+                <span class="w-21.75 shrink-0">28 (11.24%)</span>
+              </li>
+              <li class="text-preset-4 flex items-center justify-between gap-3.5 font-normal">
+                <span class="w-4 shrink-0 uppercase">O</span>
+                <div class="flex h-3 grow items-center rounded-full bg-neutral-800">
+                  <span class="inline-block h-full w-[8.84%] rounded-full bg-purple-400"></span>
+                </div>
+                <span class="w-21.75 shrink-0">22 (8.84%)</span>
+              </li>
+              <li class="text-preset-4 flex items-center justify-between gap-3.5 font-normal">
+                <span class="w-4 shrink-0 uppercase">N</span>
+                <div class="flex h-3 grow items-center rounded-full bg-neutral-800">
+                  <span class="inline-block h-full w-[8.43%] rounded-full bg-purple-400"></span>
+                </div>
+                <span class="w-21.75 shrink-0">21 (8.43%)</span>
+              </li>
+            </ul>
+            <button
+              class="text-preset-3 flex cursor-pointer items-center gap-2 font-normal"
+              type="button"
+            >
+              See more
+              <svg
+                class="translate-y-px"
+                width="11"
+                height="7"
+                viewBox="0 0 11 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4.78125 5.875L0.15625 1.28125C0 1.15625 0 0.90625 0.15625 0.75L0.78125 0.15625C0.9375 0 1.15625 0 1.3125 0.15625L5.0625 3.84375L8.78125 0.15625C8.9375 0 9.1875 0 9.3125 0.15625L9.9375 0.75C10.0938 0.90625 10.0938 1.15625 9.9375 1.28125L5.3125 5.875C5.15625 6.03125 4.9375 6.03125 4.78125 5.875Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </article>
         </div>
       </section>
     </main>
