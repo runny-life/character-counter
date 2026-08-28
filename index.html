@@ -76,6 +76,55 @@
         </button>
       </div>
     </header>
+    <main class="flex flex-col gap-10 pt-10 pb-8 md:pb-23.25 lg:pt-12 lg:pb-16">
+      <section>
+        <div class="container flex flex-col items-center justify-center gap-10">
+          <h1 class="text-preset-1 max-w-132.5 text-center font-bold text-neutral-100">
+            Analyze&nbsp;your&nbsp;text in real-time.
+          </h1>
+          <form class="flex w-full flex-col gap-4">
+            <textarea
+              class="bg-textarea-dark text-preset-3 min-h-50 w-full resize-none rounded-xl p-4 font-normal md:p-5"
+              name=""
+              placeholder="Start typing here… (or paste your text)"
+            ></textarea>
+            <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+              <fieldset class="flex flex-col gap-3 md:flex-row md:gap-6">
+                <div class="flex items-center gap-2.5">
+                  <input
+                    class="size-4 appearance-none rounded-sm border border-neutral-200 bg-transparent"
+                    id="exclude-spaces"
+                    type="checkbox"
+                    name="Exclude Spaces"
+                  />
+                  <label
+                    class="text-preset-4 font-normal"
+                    for="exclude-spaces"
+                    >Exclude Spaces</label
+                  >
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <input
+                    class="size-4 appearance-none rounded-sm border border-neutral-200 bg-transparent"
+                    id="set-character-limit"
+                    type="checkbox"
+                    name="Set Character Limit"
+                  />
+                  <label
+                    class="text-preset-4 font-normal"
+                    for="set-character-limit"
+                    >Set Character Limit</label
+                  >
+                </div>
+              </fieldset>
+              <p class="text-preset-4 font-normal">
+                Approx. reading time: <span>&lt;1 minute</span>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <script
       type="module"
       src="/src/scripts/main.js"

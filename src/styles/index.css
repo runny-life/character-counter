@@ -1,25 +1,26 @@
-@import "tailwindcss";
-@import "./typography.css";
+@import 'tailwindcss';
+@import './typography.css';
 
 @theme {
   /* Colors */
-  --color-neutral-0: #FFFFFF;
-  --color-neutral-100: #F2F2F7;
-  --color-neutral-200: #E4E4EF;
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #f2f2f7;
+  --color-neutral-200: #e4e4ef;
   --color-neutral-600: #404254;
-  --color-neutral-700: #2A2B37;
-  --color-neutral-800: #21222C;
-  --color-neutral-900: #12131A;
-  --color-purple-400: #D3A0FA;
-  --color-purple-500: #C27CF8;
-  --color-yellow-500: #FF9F00;
-  --color-orange-500: #FE8159;
-  --color-orange-800: #DA3701;
+  --color-neutral-700: #2a2b37;
+  --color-neutral-800: #21222c;
+  --color-neutral-900: #12131a;
+  --color-purple-400: #d3a0fa;
+  --color-purple-500: #c27cf8;
+  --color-yellow-500: #ff9f00;
+  --color-orange-500: #fe8159;
+  --color-orange-800: #da3701;
   /* Theme */
   --color-background-dark: var(--color-neutral-900);
   --color-fonts-dark: var(--color-neutral-200);
+  --color-textarea-dark: var(--color-neutral-800);
   /* Fonts */
-  --font-dm-sans: "DM Sans", sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
   --text-preset-1: clamp(2.5rem, 1.069rem + 6.107vw, 4rem);
   --text-preset-1--line-height: 1;
   --text-preset-1--letter-spacing: -1px;
@@ -43,7 +44,7 @@
 }
 
 @utility container {
-  max-width: 61.875;
+  max-width: 61.875rem;
   width: 100%;
   margin-inline: auto;
   padding-inline: clamp(1rem, 0.046rem + 4.071vw, 2rem);
