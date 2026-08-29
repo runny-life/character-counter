@@ -110,7 +110,9 @@
                 Limit reached! Your text exceeds 300 characters.
               </span>
             </div>
-            <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div
+              class="flex min-h-7.25 flex-col gap-3 md:flex-row md:items-center md:justify-between"
+            >
               <fieldset class="flex flex-col gap-3 md:flex-row md:gap-6">
                 <div class="flex items-center gap-2.5">
                   <input
@@ -127,7 +129,7 @@
                 </div>
                 <div class="flex items-center gap-2.5">
                   <input
-                    class="hover:border-neutral-0 focus-visible:bg-neutral-0 focus-visible:shadow-neutral-0 size-4 cursor-pointer appearance-none rounded-sm border border-neutral-200 bg-transparent bg-cover bg-center bg-no-repeat transition-colors duration-200 checked:bg-purple-500 checked:bg-[url('/src/assets/images/icon-check.svg')] focus-visible:shadow-[0_0_0_2px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500 focus-visible:duration-0 checked:focus-visible:border-transparent checked:focus-visible:bg-purple-500"
+                    class="peer hover:border-neutral-0 focus-visible:bg-neutral-0 focus-visible:shadow-neutral-0 size-4 cursor-pointer appearance-none rounded-sm border border-neutral-200 bg-transparent bg-cover bg-center bg-no-repeat transition-colors duration-200 checked:bg-purple-500 checked:bg-[url('/src/assets/images/icon-check.svg')] focus-visible:shadow-[0_0_0_2px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500 focus-visible:duration-0 checked:focus-visible:border-transparent checked:focus-visible:bg-purple-500"
                     id="set-character-limit"
                     type="checkbox"
                     name="Set Character Limit"
@@ -137,11 +139,20 @@
                     for="set-character-limit"
                     >Set Character Limit</label
                   >
+                  <label
+                    class="invisible opacity-0 transition-opacity duration-200 peer-checked:visible peer-checked:opacity-100"
+                  >
+                    <input
+                      class="h-7.25 w-13.75 rounded-md border border-neutral-600 bg-transparent px-3 py-1 transition-colors duration-300 hover:not-focus-visible:bg-neutral-600 focus-visible:border-purple-500 focus-visible:shadow-[0_0_10px_0] focus-visible:shadow-purple-400 focus-visible:outline-0 focus-visible:duration-0"
+                      type="number"
+                      name="limit-input"
+                      min="10"
+                      step="1"
+                    />
+                  </label>
                 </div>
               </fieldset>
-              <p class="text-preset-4 font-normal">
-                Approx. reading time: <span>&lt;1 minute</span>
-              </p>
+              <p class="text-preset-4 font-normal">Approx. reading time: <span>0 minute</span></p>
             </div>
           </form>
           <ul class="grid w-full gap-4 md:grid-cols-3">
@@ -150,7 +161,7 @@
                 class="rounded-xl bg-purple-400 bg-[url('/src/assets/images/pattern-character-count.svg')] bg-contain bg-position-[117%_0] bg-no-repeat p-5 text-neutral-900 md:bg-position-[180%_0] lg:md:bg-position-[119%_0]"
               >
                 <div class="flex flex-col gap-2">
-                  <p class="text-preset-1 font-bold">278</p>
+                  <p class="text-preset-1 font-bold">00</p>
                   <h3 class="text-preset-3 font-normal">Total Characters</h3>
                 </div>
               </article>
@@ -160,7 +171,7 @@
                 class="rounded-xl bg-yellow-500 bg-[url('/src/assets/images/pattern-word-count.svg')] bg-contain bg-position-[117%_0] bg-no-repeat p-5 text-neutral-900 md:bg-position-[180%_0] lg:md:bg-position-[119%_0]"
               >
                 <div class="flex flex-col gap-2">
-                  <p class="text-preset-1 font-bold">39</p>
+                  <p class="text-preset-1 font-bold">00</p>
                   <h3 class="text-preset-3 font-normal">Word Count</h3>
                 </div>
               </article>
@@ -170,7 +181,7 @@
                 class="rounded-xl bg-orange-500 bg-[url('/src/assets/images/pattern-sentence-count.svg')] bg-contain bg-position-[117%_0] bg-no-repeat p-5 text-neutral-900 md:bg-position-[180%_0] lg:md:bg-position-[119%_0]"
               >
                 <div class="flex flex-col gap-2">
-                  <p class="text-preset-1 font-bold">04</p>
+                  <p class="text-preset-1 font-bold">00</p>
                   <h3 class="text-preset-3 font-normal">Sentence Count</h3>
                 </div>
               </article>
@@ -178,7 +189,10 @@
           </ul>
           <article class="flex w-full flex-col items-start gap-5">
             <h3 class="text-preset-2 font-semibold">Letter Density</h3>
-            <ul class="flex w-full flex-col gap-3">
+            <p class="text-preset-4 font-normal">
+              No characters found. Start typing to see letter density.
+            </p>
+            <!-- <ul class="flex w-full flex-col gap-3">
               <li class="text-preset-4 flex items-center justify-between gap-3.5 font-normal">
                 <span class="w-4 shrink-0 uppercase">E</span>
                 <div class="flex h-3 grow items-center rounded-full bg-neutral-800">
@@ -234,7 +248,7 @@
                   fill="currentColor"
                 />
               </svg>
-            </button>
+            </button> -->
           </article>
         </div>
       </section>
